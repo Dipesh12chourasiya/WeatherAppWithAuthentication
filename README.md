@@ -6,7 +6,7 @@ WeatherApp is a real-time weather forecasting application built using Jetpack Co
 ---
 
 ## APK Link
-"https://drive.google.com/file/d/1033IxrXUNDj2vp2HeydOs3s3qNJ09qC8/view?usp=sharing"
+"https://drive.google.com/drive/folders/1tWemmLx1mSj1utnVeM08zlLisHHdxRY0?usp=sharing"
 
 ## Features
 1. **Search Functionality**:
@@ -39,62 +39,16 @@ WeatherApp is a real-time weather forecasting application built using Jetpack Co
 
 ---
 
-## Code Structure
-### Key Components
-
-1. **WeatherPage**
-   - Main composable function that displays the search bar, fetches weather data, and handles different API states (loading, success, error).
-
-2. **WeatherDetails**
-   - Displays detailed weather information such as temperature, condition, and additional metrics (humidity, wind speed, etc.).
-
-3. **WeatherKeyVal**
-   - A reusable composable function for displaying key-value pairs (e.g., "Humidity: 60").
-
-4. **ViewModel**
-   - `WeatherViewModel` handles data fetching and exposes the results to the UI via LiveData.
-
-5. **API Response Handling**
-   - Utilizes a sealed class `NetworkResponse` to manage different states: `Loading`, `Success`, and `Error`.
-
----
-
-## Dependencies
-Include the following dependencies in your `build.gradle` file:
-
-```gradle
-implementation "androidx.compose.material3:material3:1.5.2"
-implementation "androidx.compose.runtime:runtime-livedata:1.5.2"
-implementation "io.coil-kt:coil-compose:2.0.0"
-implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
-```
-
----
-
-## Installation and Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repository/weatherapp.git
-   ```
-
-2. Open the project in Android Studio.
-
-3. Add your API key for the weather service in the `WeatherViewModel` (if required).
-
-4. Sync the Gradle files.
-
-5. Run the application on an emulator or physical device.
 
 ---
 
 ## Usage
 
 1. Open the app.
-2. Enter a city name in the search bar and press the search button.
-3. View the weather details for the entered city.
-4. Default weather details for Indore will load if no search is performed.
-
+2. Login or Sign Up.
+3. Enter a city name in the search bar and press the search button.
+4. View the weather details for the entered city.
+5. Default weather details for Indore will load if no search is performed.
 ---
 
 ## API Integration
@@ -120,22 +74,6 @@ implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
 }
 ```
 
----
-
-## Known Issues and Improvements
-1. **Error Handling**:
-   - Enhance error messages for specific API failures.
-
-2. **Loading State**:
-   - Add more engaging loading animations.
-
-3. **Unit Tests**:
-   - Add unit tests for ViewModel and composable functions.
-
-4. **Dark Mode**:
-   - Implement dark mode support for better usability.
-
----
 
 
 
